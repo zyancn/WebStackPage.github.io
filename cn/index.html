@@ -4096,11 +4096,11 @@
 	</div>
 		<div class="pay_explain">扫码打赏，你说多少就多少</div>
 	<div class="shang_payselect">
-		<div class="pay_item checked" data-id="alipay">
+		<div class="pay_item checked" data-id="eth">
 			<span class="radiobox"></span>
 			<span class="pay_logo"><img src="../assets/images/etherscan.png" alt="Etherscan" /></span>
 		</div>
-		<div class="pay_item" data-id="weipay">
+		<div class="pay_item" data-id="btc">
 			<span class="radiobox"></span>
 			<span class="pay_logo"><img src="../assets/images/bitcoin.png" alt="Bitcion" /></span>
 		</div>
@@ -4116,7 +4116,7 @@ $(function(){
 		$(this).addClass('checked').siblings('.pay_item').removeClass('checked');
 		var dataid=$(this).attr('data-id');
 		$(".shang_payimg img").attr("src","../assets/images/"+dataid+"img.jpg");
-		$("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+		$("#shang_pay_txt").text(dataid=="eth"?"Etherscan":"Bitcoin");
 	});
 });
 function dashangToggle(){
