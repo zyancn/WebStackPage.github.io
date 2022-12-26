@@ -4106,7 +4106,7 @@
 		</div>
 	</div>
 	<div class="shang_info">
-		<p><span id="shang_pay_txt">复制地址</span>0xAB90C9aD1Cd135429ef5BC553B3a0C6133430aA2</p>
+		<p><span id="shang_pay_txt">复制地址</span>：<b>0xAB90C9aD1Cd135429ef5BC553B3a0C6133430aA2</b></p>
 	</div>
 </div>
 </div>
@@ -4115,7 +4115,7 @@ $(function(){
 	$(".pay_item").click(function(){
 		$(this).addClass('checked').siblings('.pay_item').removeClass('checked');
 		var dataid=$(this).attr('data-id');
-		$(".shang_payimg img").attr("src","../assets/images/"+dataid+"img.jpg");
+		$(".shang_payimg img").attr("src","../assets/images/"+dataid+"img.png");
 		$("#shang_pay_txt").text(dataid=="eth"?"Etherscan":"Bitcoin");
 	});
 });
